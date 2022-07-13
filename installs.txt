@@ -1,0 +1,20 @@
+# conda create -n tf-cartpole
+
+# conda activate tf-cartpole
+
+conda install tensorflow
+pip install gym\[classic_control\]
+pip install pyglet
+
+# Install additional packages for visualization
+sudo apt-get install -y xvfb python-opengl > /dev/null 2>&1
+pip install pyvirtualdisplay > /dev/null 2>&1
+pip install git+https://github.com/tensorflow/docs > /dev/null 2>&1
+
+pip install Pillow
+pip install ipython
+
+# Inspired by https://stackoverflow.com/questions/71759248/importerror-cannot-import-name-builder-from-google-protobuf-internal
+pip install protobuf==3.20
+
+pip install tqdm
